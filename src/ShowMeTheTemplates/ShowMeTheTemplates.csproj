@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net481</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <VersionPrefix>0.1.0</VersionPrefix>
+    <AssemblyName>KsWare.ShowMeTheTemplates</AssemblyName>
+    <RootNamespace>KsWare.ShowMeTheTemplates</RootNamespace>
+    <PackageId>KsWare.ShowMeTheTemplates</PackageId>
+    <Authors>KsWare</Authors>
+    <Company>KsWare</Company>
+    <Product>KsWare.ShowMeTheTemplates</Product>
+    <Copyright>(c) Copyright 2024 by KsWare</Copyright>
+    <PackageIcon>PackageIcon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE.txt" Link="Properties\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\PackageIcon.png" Link="Properties\PackageIcon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.md" Link="Properties\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\KsWare.Presentation.XamlProcessing\src\KsWare.Presentation.XamlProcessing\KsWare.Presentation.XamlProcessing.csproj" />
+  </ItemGroup>
+
+</Project>
